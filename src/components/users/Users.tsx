@@ -4,12 +4,24 @@ import { IUser } from '../../interfaces/IUser'
 function Users() {
     const [users, setUsers] = useState<IUser[]>([])
 
+    //componentDidMount
     useEffect(() => {
         fetchUserData()
+        console.log("componentDidMount")
     }, [])
 
+    //componentDidUpdate
+    // useEffect(() => {
+    //     console.log("componentDidUpdate")
+    // })
+
+    //componentDidUpdate
+    // useEffect(() => {
+    //     console.log("componentDidUpdate")
+    // })
+
     const fetchUserData = () => {
-        fetch("https://jsonplaceholder.typicode.com/users")
+        fetch("http://15.228.50.177/api/users")
             .then(response => {
                 return response.json()
             })
