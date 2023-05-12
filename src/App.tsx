@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Table from './components/table/Table';
+import Users from './components/users/Users';
 
 function App() {
   const [contar, setContar] = useState(0);
@@ -17,7 +17,7 @@ function App() {
       <button className='px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm' onClick={() => test()}>
         aumentar
       </button>
-      <Table></Table>
+      <Users></Users>
     </>
   )
 }
