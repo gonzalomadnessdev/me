@@ -21,7 +21,7 @@ function Users() {
     // })
 
     const fetchUserData = () => {
-        fetch("http://15.228.50.177/api/users")
+        fetch("http://jsonplaceholder.typicode.com/users")
             .then(response => {
                 return response.json()
             })
